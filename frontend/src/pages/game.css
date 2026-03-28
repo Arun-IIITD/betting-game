@@ -1,0 +1,106 @@
+/* Full page layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f6f8;
+}
+
+/* Main card */
+.card {
+  background: #ffffff;
+  padding: 30px;
+  width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.card h2 {
+  margin-bottom: 20px;
+}
+
+/* Row title */
+.card h3 {
+  margin: 10px 0;
+}
+
+/* Row layout */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Card buttons */
+.card button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Hover effect */
+.card button:hover {
+  background: #0056b3;
+}
+
+/* Click effect */
+.card button:active {
+  transform: scale(0.95);
+}
+
+
+/* Card style */
+.card-btn {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+.card-btn:hover {
+  background: #0056b3;
+}
+
+/* Open card */
+.card-btn.open {
+  background: #28a745;
+}
+
+/* Reset button */
+.reset-btn {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background: #ff9800;
+  color: white;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: #e68900;
+}

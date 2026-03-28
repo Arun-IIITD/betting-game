@@ -1,0 +1,62 @@
+/* Full page layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding-top: 40px;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  padding: 25px;
+  width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Each user block */
+.card div {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+/* User text */
+.card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Input */
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button */
+.button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+.button:hover {
+  background: #218838;
+}

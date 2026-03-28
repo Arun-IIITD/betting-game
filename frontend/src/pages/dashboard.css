@@ -1,0 +1,85 @@
+/* Full page layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f6f8;
+}
+
+/* Card box */
+.card {
+  background: #ffffff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Text info */
+.card p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Input */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Buttons inside row */
+.btn-row .button {
+  flex: 1;              
+  padding: 12px;
+  font-size: 14px;
+}
+
+/* Default button */
+.button {
+  width: 100%;          /* fallback */
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button {
+  white-space: nowrap;  
+}
+
+/* Hover */
+.button:hover {
+  background: #0056b3;
+}
+
+/* Special styling for logout */
+.button:last-child {
+  background: #dc3545;
+}
+
+.button:last-child:hover {
+  background: #a71d2a;
+}
