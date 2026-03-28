@@ -12,7 +12,8 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(express.json()); 
+app.use(helmet()); // 🔐 security
+
 
 app.use("/api/auth", authRoutes);
 app.use("/api/wallet", walletRoutes);
@@ -27,4 +28,6 @@ app.get("/", (req, res) => {
   res.send("API is running");
 });
 
-app.listen(5000, () => console.log("Server running on 5000"));
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => console.log("Server running on 5000"));
